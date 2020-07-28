@@ -4,6 +4,10 @@ This is only a project to practice TypeScript and ReactJS. there're functions li
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Layout
+
+<img src="/layout/desafio_react_js.png" width="500px">  
+
 ## Available Scripts
 
 In the project directory, you can run:
