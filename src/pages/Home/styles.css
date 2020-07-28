@@ -59,3 +59,10 @@
   font-size: 2em;
   margin: 20px 0;
 }
+
+.not-found {
+  color: rgb(105, 105, 105);
+  font-size: 1.3em;
+  margin: 20px 0;
+  align-self: center;
+}

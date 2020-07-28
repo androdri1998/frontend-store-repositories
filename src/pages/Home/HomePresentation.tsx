@@ -12,6 +12,7 @@ const HomePresentation: React.FC<IPropsHomePresentation> = ({
   handleAddNewProject,
   handleRemoveProject,
 }) => {
+  console.log(projects);
   return (
     <main className="container-home">
       <header className="header">
@@ -32,13 +33,17 @@ const HomePresentation: React.FC<IPropsHomePresentation> = ({
         </form>
       </header>
       <p className="title">Your projects</p>
-      {projects.map((project) => (
-        <ItemProject
-          key={project.id}
-          project={project}
-          handleRemoveProject={handleRemoveProject}
-        />
-      ))}
+      {projects && projects.length > 0 ? (
+        projects.map((project) => (
+          <ItemProject
+            key={project.id}
+            project={project}
+            handleRemoveProject={handleRemoveProject}
+          />
+        ))
+      ) : (
+        <p className="not-found">Projetos não encontrados</p>
+      )}
     </main>
   );
 };
