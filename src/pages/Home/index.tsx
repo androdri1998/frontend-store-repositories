@@ -27,14 +27,15 @@ const HomePage: React.FC = () => {
     projectName: string
   ): Promise<void> {
     ev.preventDefault();
-    await registerProject({ name: projectName });
-    await loadProjects();
+    const newProject = await registerProject({ name: projectName });
+    setProjects([...projects, newProject]);
     setNewProjectName("");
   }
 
   async function handleRemoveProject(projectId: string): Promise<void> {
     await deleteProject(projectId);
-    await loadProjects();
+    const auxProjects = projects.filter((project) => project.id !== projectId);
+    setProjects([...auxProjects]);
   }
 
   async function handleListProjects(): Promise<Iproject[]> {
