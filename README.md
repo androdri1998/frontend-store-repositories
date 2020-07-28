@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Layout
 
-<img src="/layout/desafio_react_js.png" width="500px">  
+<img src="/layout/desafio_react_js.png">  
 
 ## Available Scripts
 
