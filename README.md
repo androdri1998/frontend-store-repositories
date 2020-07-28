@@ -1,5 +1,7 @@
 # frontend-store-repositories
 
+This is only a project to practice TypeScript and ReactJS. there're functions like add project, list projects and remove project.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
