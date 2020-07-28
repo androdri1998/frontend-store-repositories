@@ -17,7 +17,7 @@ const HomePresentation: React.FC<IPropsHomePresentation> = ({
       <header className="header">
         <form onSubmit={(ev) => handleAddNewProject(ev, newProjectName)}>
           <input
-            placeholder="Titulo do novo projeto"
+            placeholder="Título do novo projeto"
             type="text"
             onChange={({ target }) => handleChangeNewProjectName(target.value)}
             value={newProjectName}
