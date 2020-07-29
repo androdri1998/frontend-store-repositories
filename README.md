@@ -7,6 +7,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Layout
 
 <img src="/layout/desafio_react_js.png">  
+  
+## Required  
+Create a file named as `.env` in path `./`, the content of file is:
+```
+REACT_APP_BASE_URL=[SOME_BASE_URL]
+```
 
 ## Available Scripts
 
